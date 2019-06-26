@@ -115,6 +115,8 @@ functions:
           authorizer: aws_iam
 
   # Reference to billing API and Lambda function
+  # Defines an HTTP API endpoint that calls the main function in billing.js
+  # - method: POST request
   billing:
     handler: billing.main
     events:
